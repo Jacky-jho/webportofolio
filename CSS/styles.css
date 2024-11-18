@@ -1,1 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: radial-gradient(circle at center, #0b0f29, #000);
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #1c1f33;
+    padding: 1em 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #00d4ff;
+    text-shadow: 0 0 20px #00d4ff;
+}
+
+header nav ul {
+    list-style: none;
+    margin-top: 1em;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #e0e0e0;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #00d4ff;
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 175px;
+    border-radius: 50%;
+    border: 5px solid #00d4ff;
+    margin-bottom: 1em;
+}
+
+.intro-text h2 {
+    font-size: 2em;
+    color: #00d4ff;
+}
+
+.intro-text p {
+    max-width: 600px;
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+#skills h2 {
+    color: #00d4ff;
+    margin-bottom: 0.5em;
+    text-shadow: 0 0 10px #00d4ff;
+}
+
+#skills p {
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5em;
+    margin: 2em 0;
+}
+
+.project {
+    background: #1c1f33;
+    padding: 1em;
+    border: 2px solid #00d4ff;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 212, 255, 0.5);
+}
+
+.project h3 {
+    font-size: 1.5em;
+    color: #00d4ff;
+    margin-bottom: 0.5em;
+}
+
+.project p {
+    font-size: 0.9em;
+    color: #b0b0b0;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 2em 0;
+}
+
+.icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon img:hover {
+    transform: scale(1.2);
+}
+
+.icon span {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1c1f33;
+    color: #e0e0e0;
+    padding: 0.3em 0.5em;
+    border: 1px solid #00d4ff;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.icon:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+
+.icon a {
+    text-decoration: none;
+    color: #00d4ff;
+    font-size: 2em;
+}
+
+.charity-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    margin: 2em 0;
+}
+
+.charity-block {
+    background: #1c1f33;
+    padding: 1.5em;
+    border: 2px solid #00d4ff;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.charity-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 212, 255, 0.5);
+}
+
+.charity-block h3 {
+    font-size: 1.5em;
+    color: #00d4ff;
+    margin-bottom: 0.5em;
+}
+
+.charity-block p {
+    font-size: 1.1em;
+    color: #b0b0b0;
+}
+
+footer {
+    background-color: #1c1f33;
+    text-align: center;
+    padding: 1em 0;
+    color: #e0e0e0;
+    font-size: 0.9em;
+    border-top: 1px solid #00d4ff;
+}
+
+.lang-button {
+    background-color: #1c1f33;
+    color: #00d4ff;
+    border: 2px solid #00d4ff;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.lang-button:hover {
+    background-color: #00d4ff;
+    color: #1c1f33;
+}
 
